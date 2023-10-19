@@ -1,2 +1,2 @@
 import fs from "fs"
-import {g}
+import {generateStudent} from "./generateStudent.js"
