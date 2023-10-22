@@ -1,7 +1,6 @@
 import { faker } from '@faker-js/faker';
 
-
-export const gotStudent = (id) => {
+export const generateStudent = (id) => {
     faker.seed(Number(id));
 
     return {
@@ -9,5 +8,7 @@ export const gotStudent = (id) => {
         name: faker.person.firstName(),
         surname: faker.person.lastName(),
         email: faker.internet.email(),
-    }
+    };
 }
+
+
