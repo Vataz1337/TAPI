@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "server-start": "nodemon server/index.js"
+    "server-start": "nodemon src/server/index.js"
   },
   "dependencies": {
     "@faker-js/faker": "^8.1.0",
