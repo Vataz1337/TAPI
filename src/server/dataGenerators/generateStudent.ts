@@ -1,6 +1,8 @@
 import { faker } from '@faker-js/faker';
+import {StudentInterface} from "../interfaces/studentInterface";
 
-export const generateStudent = (id) => {
+
+export const generateStudent = (id: number) : StudentInterface => {
     faker.seed(Number(id));
 
     return {

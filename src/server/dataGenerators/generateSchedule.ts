@@ -4,10 +4,10 @@ export const generateSchedule = (id) => {
     faker.seed(Number(id));
 
     const day = faker.date.weekday();
-    const subject = faker.random.words();
-    const room = faker.address.streetName();
-    const startTime = faker.time.recent();
-    const endTime = faker.time.recent();
+    const subject = faker.internet.domainWord()
+    const room = faker.location.streetAddress()
+    const startTime = faker.date.anytime()
+    const endTime = faker.date.anytime()
 
     return {
         id: id,

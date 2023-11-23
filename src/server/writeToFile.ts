@@ -1,15 +1,16 @@
 import fs from "fs";
 import path from "path";
-import { generateStudent } from "./dataGenerators/generateStudent.js";
+import { generateStudent } from "./dataGenerators/generateStudent.ts";
+import {StudentInterface} from "./interfaces/studentInterface";
 
 const numberOfStudents = 10;
-const students = [];
+const students : StudentInterface[] = [];
 
-for (let i = 1; i <= numberOfStudents; i++) {
+for (let i : number = 1; i <= numberOfStudents; i++) {
     students.push(generateStudent(i));
 }
 
-const data = JSON.stringify(students, null, 2);
+const data : string = JSON.stringify(students, null, 2);
 
 
 const directoryPath = "generatedJson/students";
