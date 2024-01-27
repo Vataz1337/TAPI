@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { generateStudent } from "./dataGenerators/generateStudent.ts";
+import { generateStudent } from "./dataGenerators/generateStudent";
 import {StudentInterface} from "./interfaces/studentInterface";
 
 const numberOfStudents = 10;

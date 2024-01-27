@@ -1,7 +1,8 @@
 export interface ScheduleInterface {
-    day: String;
-    subject: String;
-    room: String;
+    id: number;
+    day: string;
+    subject: string;
+    room: string;
     startTime: Date;
     endTime: Date;
 }

@@ -1,39 +1,30 @@
 import express from "express";
-import {expressMiddleware} from "@apollo/server/express4";
-import {ApolloServer} from "@apollo/server";
 import cors from "cors";
-import {studentsRouter} from "./routes/student.ts";
-import {scheduleRouter} from "./routes/schedule.ts";
+import { studentsRouter } from "./routes/student";
+import { scheduleRouter } from "./routes/schedule";
+import swaggerUi from 'swagger-ui-express';
+import specs from './swagger';
+import { graphqlHTTP } from 'express-graphql';
+import { schema } from './graphqlSchema';
 
 const PORT = 8080;
 const app = express();
 
-// const typeDefs = `#graphql
-// type Student {
-//     id: Int
-//     name: String
-//     surname: String
-//     email: String
-// }
-// `;
+app.use('/student', studentsRouter);
+app.use('/schedule', scheduleRouter);
 
-// const Resolvers = {
-//     Query: {
-//         students: () => students,
-//         student: (parent, args) => students.find(s => s.id === args.id),
-//     }
-// }
+app.use(cors());
 
-// const server = new ApolloServer({typeDefs, Resolvers});
-// await server.start();
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 
-app.use('/student', studentsRouter)
-app.use('/schedule', scheduleRouter)
-// app.use('/graphql', cors(), express.json(), expressMiddleware(server))
-app.use(cors({
-    origin: "*"
-}))
+app.use(
+    '/graphql',
+    graphqlHTTP({
+        schema,
+        graphiql: true,
+    })
+);
 
 app.listen(PORT, () => {
     console.log(`Server started on port: ${PORT}`);
-})
+});
