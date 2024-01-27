@@ -54,3 +54,10 @@ exports.studentsRouter.get('/file/:id', (req, res) => {
     const student = data.find((student) => student.id === Number(id));
     res.send(student);
 });
+//new endpoints:
+exports.studentsRouter.get('/all/file', (req, res) => {
+    const filePath = path_1.default.join('./', 'generatedJson', 'students', 'studentData.json');
+    const rawData = fs_1.default.readFileSync(filePath, 'utf-8');
+    const data = JSON.parse(rawData);
+    res.send(data);
+});

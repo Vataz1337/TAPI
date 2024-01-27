@@ -58,3 +58,10 @@ studentsRouter.get<{id: number}, StudentInterface>('/file/:id', (req, res) => {
 
     res.send(student);
 });
+
+studentsRouter.get('/all/file', (req, res) => {
+    const filePath = path.join('./', 'generatedJson', 'students', 'studentData.json');
+    const rawData = fs.readFileSync(filePath, 'utf-8');
+    const data = JSON.parse(rawData);
+    res.send(data);
+});

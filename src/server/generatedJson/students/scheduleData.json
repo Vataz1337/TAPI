@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "day": "Wednesday",
+    "subject": "digital-somersault",
+    "room": "3266 McClure Rest",
+    "startTime": "2024-10-11T23:35:19.081Z",
+    "endTime": "2024-02-03T01:43:19.761Z"
+  },
+  {
+    "id": 2,
+    "day": "Thursday",
+    "subject": "programming-fundamentals",
+    "room": "2101 Coding Hall",
+    "startTime": "2024-09-25T08:15:30.456Z",
+    "endTime": "2024-09-25T10:30:45.123Z"
+  },
+  {
+    "id": 3,
+    "day": "Monday",
+    "subject": "data-structures",
+    "room": "415 Data Lab",
+    "startTime": "2024-11-03T14:00:00.000Z",
+    "endTime": "2024-11-03T16:30:00.000Z"
+  },
+  {
+    "id": 4,
+    "day": "Friday",
+    "subject": "web-development",
+    "room": "102 Web Studio",
+    "startTime": "2024-12-07T10:45:00.000Z",
+    "endTime": "2024-12-07T13:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "day": "Tuesday",
+    "subject": "algorithm-design",
+    "room": "512 Algorithm Lab",
+    "startTime": "2024-10-01T09:30:00.000Z",
+    "endTime": "2024-10-01T12:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "day": "Wednesday",
+    "subject": "machine-learning",
+    "room": "726 AI Center",
+    "startTime": "2024-09-18T13:15:00.000Z",
+    "endTime": "2024-09-18T16:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "day": "Thursday",
+    "subject": "database-management",
+    "room": "301 Database Lab",
+    "startTime": "2024-11-14T11:00:00.000Z",
+    "endTime": "2024-11-14T13:30:00.000Z"
+  },
+  {
+    "id": 8,
+    "day": "Monday",
+    "subject": "network-security",
+    "room": "612 Security Center",
+    "startTime": "2024-12-21T15:45:00.000Z",
+    "endTime": "2024-12-21T18:00:00.000Z"
+  },
+  {
+    "id": 9,
+    "day": "Tuesday",
+    "subject": "software-engineering",
+    "room": "401 Software Lab",
+    "startTime": "2024-10-29T10:00:00.000Z",
+    "endTime": "2024-10-29T12:15:00.000Z"
+  },
+  {
+    "id": 10,
+    "day": "Friday",
+    "subject": "cybersecurity",
+    "room": "815 Cyber Lab",
+    "startTime": "2024-11-08T14:30:00.000Z",
+    "endTime": "2024-11-08T17:00:00.000Z"
+  }
+]
