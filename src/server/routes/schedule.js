@@ -11,7 +11,7 @@ const fs_1 = __importDefault(require("fs"));
 exports.scheduleRouter = express_1.default.Router();
 /**
  * @swagger
- * /schedule/{id}:
+ * /schedule/notFile/{id}:
  *   get:
  *     summary: Get schedule by ID
  *     parameters:

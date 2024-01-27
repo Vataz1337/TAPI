@@ -59,6 +59,15 @@ studentsRouter.get<{id: number}, StudentInterface>('/file/:id', (req, res) => {
     res.send(student);
 });
 
+/**
+ * @swagger
+ * /student/all/file:
+ *   get:
+ *     summary: Get all students from file
+ *     responses:
+ *       200:
+ *         description: List of all students
+ */
 studentsRouter.get('/all/file', (req, res) => {
     const filePath = path.join('./', 'generatedJson', 'students', 'studentData.json');
     const rawData = fs.readFileSync(filePath, 'utf-8');

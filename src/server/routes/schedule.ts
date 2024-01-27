@@ -8,7 +8,7 @@ export const scheduleRouter = express.Router();
 
 /**
  * @swagger
- * /schedule/{id}:
+ * /schedule/notFile/{id}:
  *   get:
  *     summary: Get schedule by ID
  *     parameters:
